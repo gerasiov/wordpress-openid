@@ -1,3 +1,12 @@
+wordpress-openid (3.3.4-1) unstable; urgency=low
+
+  * New upstream release 3.3.4
+  * Remove 01_fix_common_php_require_once.patch: Fixed upstream.
+  * Add 00_remove_embed_libs.patch: Do not add ./lib to include_path.
+  * debian/control: Bump Standard's version: no changes needed.
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Mon, 24 Dec 2012 15:06:32 +0400
+
 wordpress-openid (3.3.3-1) unstable; urgency=low
 
   * Imported Upstream version 3.3.3
