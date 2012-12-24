@@ -1,0 +1,19 @@
+wordpress-openid (3.3.3-1) unstable; urgency=low
+
+  * Imported Upstream version 3.3.3
+  * New Standards version, no changes needed.
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Tue, 21 Dec 2010 00:58:06 +0300
+
+wordpress-openid (3.3.2-2) unstable; urgency=low
+
+  * 01_fix_common_php_require_once.patch: Fix inclusion of system php-
+    openid component.
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Tue, 06 Jul 2010 21:09:18 +0400
+
+wordpress-openid (3.3.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #493236)
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Mon, 04 Jan 2010 04:28:51 +0300

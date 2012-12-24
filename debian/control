@@ -1,0 +1,20 @@
+Source: wordpress-openid
+Section: php
+Priority: optional
+Maintainer: Alexander GQ Gerasiov <gq@debian.org>
+Build-Depends: debhelper (>= 6.0.7), cdbs
+Standards-Version: 3.9.1
+Homepage: http://wordpress.org/extend/plugins/openid/
+Vcs-Git: git://git.gq.net.ru/wordpress-openid.git
+Vcs-Browser: http://git.gq.net.ru/?p=wordpress-openid.git
+
+Package: wordpress-openid
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, wordpress, php-openid (>= 2.1.3), wordpress-xrds-simple
+Description: OpenID plugin for WordPress
+ OpenID is an open standard that allows users to authenticate to websites
+ without having to create a new password. This plugin allows users to login to
+ their local WordPress account using an OpenID, as well as enabling commenters
+ to leave authenticated comments with OpenID. The plugin also includes an
+ OpenID provider, enabling users to login to OpenID-enabled sites using their
+ own personal WordPress account.
