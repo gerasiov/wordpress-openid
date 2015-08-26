@@ -1,3 +1,13 @@
+wordpress-openid (3.4.0-1) unstable; urgency=medium
+
+  * Remove CDBS dependency and switch to DH 9+.
+  * Bump Standard's version, not changes needed.
+  * Add debian/watch.
+  * Update Vcs-* headers.
+  * Update 00_remove_embed_libs.patch.
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Wed, 26 Aug 2015 18:12:10 +0300
+
 wordpress-openid (3.3.4-1) unstable; urgency=low
 
   * New upstream release 3.3.4
