@@ -1,20 +1,19 @@
-Index: wordpress-openid/openid.php
-===================================================================
---- wordpress-openid.orig/openid.php	2012-12-24 14:59:21.000000000 +0400
-+++ wordpress-openid/openid.php	2012-12-24 15:09:32.000000000 +0400
-@@ -16,15 +16,11 @@
- // last plugin revision that required database schema changes
- define ( 'OPENID_DB_REVISION', 24426);
+--- a/openid.php
++++ b/openid.php
+@@ -30,16 +30,11 @@
+ 	define( 'OPENID_ENABLE_ADMIN_PANELS', true );
+ }
  
--$openid_include_path = dirname(__FILE__) . '/lib';
+-
+-$openid_include_path = dirname( __FILE__ ) . '/lib';
 -
  // check source of randomness
- if ( !@is_readable('/dev/urandom') ) { 
- 	define('Auth_OpenID_RAND_SOURCE', null); 
+ if ( ! @is_readable( '/dev/urandom' ) ) {
+ 	define( 'Auth_OpenID_RAND_SOURCE', null );
  }
  
 -set_include_path( $openid_include_path . PATH_SEPARATOR . get_include_path() );
 -
- require_once dirname(__FILE__) . '/common.php';
- require_once dirname(__FILE__) . '/consumer.php';
- require_once dirname(__FILE__) . '/admin_panels.php';
+ require_once dirname( __FILE__ ) . '/common.php';
+ require_once dirname( __FILE__ ) . '/store.php';
+ 
