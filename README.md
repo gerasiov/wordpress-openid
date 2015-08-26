@@ -1,13 +1,13 @@
-=== OpenID ===
-Contributors: willnorris, factoryjoe, pfefferle
-Tags: openid, authentication, login, comments
-Requires at least: 2.8
-Tested up to: 4.3
-Stable tag: 3.4.0
+# OpenID #
+**Contributors:** willnorris, factoryjoe, pfefferle  
+**Tags:** openid, authentication, login, comments  
+**Requires at least:** 2.8  
+**Tested up to:** 4.3  
+**Stable tag:** 3.4.0  
 
 Allows WordPress to provide and consumer OpenIDs for authentication of users and comments.
 
-== Description ==
+## Description ##
 
 OpenID is an [open standard][] that allows users to authenticate to websites
 without having to create a new password. This plugin allows users to login to
@@ -24,7 +24,7 @@ integrating with and extending the plugin, can be found [here][dev-doc].
 [XRDS-Simple]: http://wordpress.org/plugins/xrds-simple/
 [dev-doc]: http://wiki.diso-project.org/wordpress-openid-api
 
-== Installation ==
+## Installation ##
 
 This plugin follows the [standard WordPress installation method][]:
 
@@ -35,15 +35,15 @@ This plugin follows the [standard WordPress installation method][]:
 [standard WordPress installation method]: http://codex.wordpress.org/Managing_Plugins#Installing_Plugins
 
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
-= Why do I get blank screens when I activate the plugin? =
+### Why do I get blank screens when I activate the plugin? ###
 
 In some cases the plugin may have problems if not enough memory has been
 allocated to PHP. Try ensuring that the PHP memory\_limit is at least 8MB
 (limits of 64MB are not uncommon).
 
-= Why don't `https` OpenIDs work? =
+### Why don't `https` OpenIDs work? ###
 
 SSL certificate problems creep up when working with some OpenID providers
 (namely MyOpenID). This is typically due to an outdated CA cert bundle being
@@ -52,7 +52,7 @@ can be found [here][libcurl].
 
 [libcurl]: http://lists.openidenabled.com/pipermail/dev/2007-August/000784.html
 
-= Why do I get the error "Invalid openid.mode '<No mode set>'"? =
+### Why do I get the error "Invalid openid.mode '<No mode set>'"? ###
 
 There are actually a couple of reasons that can cause this, but it seems one of
 the more common causes is a conflict with certain mod_security rules. See
@@ -61,7 +61,7 @@ the more common causes is a conflict with certain mod_security rules. See
 [ioni2]: http://ioni2.com/2009/wordpress-openid-login-failed-invalid-openid-mode-no-mode-set-solved-for-both-wordpress-and-drupal/
 
 
-= How do I use SSL for OpenID transactions? =
+### How do I use SSL for OpenID transactions? ###
 
 First, be aware that this only works in WordPress 2.6 and up. Make sure you've
 turned on SSL in WordPress by [defining either of the following][wp-ssl]
@@ -79,7 +79,7 @@ using a certificate purchased from a well-known certificate authority.
 
 [wp-ssl]: http://codex.wordpress.org/Administration_Over_SSL
 
-= How do I get help if I have a problem? =
+### How do I get help if I have a problem? ###
 
 Please direct support questions to the "Plugins and Hacks" section of the
 [WordPress.org Support Forum][]. Just make sure and include the tag 'openid'
@@ -89,21 +89,31 @@ report at <http://code.google.com/p/diso/issues/list>.
 [WordPress.org Support Forum]: http://wordpress.org/support/
 
 
-== Screenshots ==
+## Screenshots ##
 
-1. Commentors can use their OpenID when leaving a comment
-2. Users can login with their OpenID in place of a traditional username and password
-3. Users authorized to use the OpenID Provider can delegate to a different provider
-4. Users can add additional OpenIDs which they can use to login to WordPress
-5. Users authorized to use the OpenID Provider can monitor which sites they've logged in to
+### 1. Commentors can use their OpenID when leaving a comment ###
+![Commentors can use their OpenID when leaving a comment](http://s.wordpress.org/extend/plugins/openid/screenshot-1.png)
+
+### 2. Users can login with their OpenID in place of a traditional username and password ###
+![Users can login with their OpenID in place of a traditional username and password](http://s.wordpress.org/extend/plugins/openid/screenshot-2.png)
+
+### 3. Users authorized to use the OpenID Provider can delegate to a different provider ###
+![Users authorized to use the OpenID Provider can delegate to a different provider](http://s.wordpress.org/extend/plugins/openid/screenshot-3.png)
+
+### 4. Users can add additional OpenIDs which they can use to login to WordPress ###
+![Users can add additional OpenIDs which they can use to login to WordPress](http://s.wordpress.org/extend/plugins/openid/screenshot-4.png)
+
+### 5. Users authorized to use the OpenID Provider can monitor which sites they've logged in to ###
+![Users authorized to use the OpenID Provider can monitor which sites they've logged in to](http://s.wordpress.org/extend/plugins/openid/screenshot-5.png)
 
 
-== Changelog ==
+
+## Changelog ##
 
 Project maintined on github at
 [diso/wordpress-openid](https://github.com/diso/wordpress-openid).
 
-= version 3.4.0 (Jul XX, 2015) =
+### version 3.4.0 (Jul XX, 2015) ###
  - update to latest OpenID library (includes lots of bug fixes, particularly with PHP 5.3). Full changelog [on github](https://github.com/openid/php-openid).
  - fixed various PHP warnings/errors.
  - various improvements and bugfixes (props @rodrigoprimo).
@@ -113,24 +123,24 @@ Project maintined on github at
 
 Full changelog on [github](https://github.com/diso/wordpress-openid/compare/v3.3.4...v3.4.0).
 
-= version 3.3.4 (Nov 16, 2012) =
+### version 3.3.4 (Nov 16, 2012) ###
  - update to latest OpenID library (includes lots of bug fixes, particularly with PHP 5.3). Full changelog [on github](https://github.com/openid/php-openid).
  - various bug fixes. Full changelog [on github](https://github.com/diso/wordpress-openid).
 
-= version 3.3.3 (Aug 24, 2010) =
+### version 3.3.3 (Aug 24, 2010) ###
  - add/update danish, japanese, and spanish translations
  - update to latest version of php-openid library
  - fix a few PHP and WordPress warnings and notices
 
-= version 3.3.2 (Nov 06, 2009) =
+### version 3.3.2 (Nov 06, 2009) ###
  - add localizations for czech, danish, french, spanish, and vietnamese. Some are more up to date than others.  More are welcome, see http://code.google.com/p/diso/issues/detail?id=26
  - remove stylesheet for recent comments widget, since it breaks the style for OpenID comments
  - various fixes with administration panels
 
-= version 3.3.1 (Sep 28, 2009) =
+### version 3.3.1 (Sep 28, 2009) ###
  - tiny bug in get_user_openids causing it to always return empty array
 
-= version 3.3 (Sep 28, 2009) =
+### version 3.3 (Sep 28, 2009) ###
  - minimum required version has been bumped to WordPress 2.8
  - fix support for WordPress MU
  - new, less obtrusive UI for comment form. Should also work with all themes in some form (with or without js).
@@ -142,10 +152,10 @@ Full changelog on [github](https://github.com/diso/wordpress-openid/compare/v3.3
  - fix bug (#121) relating to unregistered options (props tom.tdw for the patch)
  - lots of minor bug fixes
 
-= version 3.2.3 (Jul 20, 2009) =
+### version 3.2.3 (Jul 20, 2009) ###
  - fix XSS vulnerability. (props Stuart Metcalfe)
 
-= version 3.2.2 (Mar 19, 2009) =
+### version 3.2.2 (Mar 19, 2009) ###
  - fix problems when using non-index.php permalinks with non-apache web servers
  - ensure that show\_on\_front option is not empty
  - function name typo (props gunemalli)
@@ -154,13 +164,13 @@ Full changelog on [github](https://github.com/diso/wordpress-openid/compare/v3.3
  - UI tweaks to better match WP 2.7
  - update a few strings for localization and POT file
 
-= version 3.2.1 (Feb 13, 2009) =
+### version 3.2.1 (Feb 13, 2009) ###
  - patch php-openid library to fix XRDS handling (thanks Mike Jones for helping find this)
  - add default values for some openid vars -- necessary for OP-initiated login
  - fix bug with OpenID server where OpenID request was sometimes lost
  - add filter for openid\_trust\_root
 
-= version 3.2 (Jan 20, 2009) =
+### version 3.2 (Jan 20, 2009) ###
  - add uninstall hook for WordPress 2.7 -- this will remove all traces of the plugin from the database
  - UI fixes for WordPress 2.7
  - add settings link to plugins page
@@ -177,47 +187,47 @@ Full changelog on [github](https://github.com/diso/wordpress-openid/compare/v3.3
  - fixed issue where OpenID consumer would sometimes break if mod\_encoding was enabled in Apache (used for WebDAV) (fixed #96)
  - don't redirect when performing discovery on OpenID trust root
 
-= version 3.1.4 (Nov 04, 2008) =
+### version 3.1.4 (Nov 04, 2008) ###
  - allow OP extensions to include XRDS Types in login service
  - run OpenID comment processor after Akismet, and skip if Akismet marks comment as spam
 
-= version 3.1.3 (Oct 27, 2008) =
+### version 3.1.3 (Oct 27, 2008) ###
  - fix error message if /dev/urandom is not readable
 
-= version 3.1.2 (Oct 26, 2008) =
+### version 3.1.2 (Oct 26, 2008) ###
  - ensure source of randomness is set properly
  - prevent duplicate cleanup\_openid cron jobs
  - prevent SQL errors on activation
  - suppress verbose error logging with XML parsing
 
-= version 3.1.1 (Oct 20, 2008) =
+### version 3.1.1 (Oct 20, 2008) ###
  - fix bug with OpenID Provider XRDS code that prevents ability to login to some sites (like plaxo.com)
 
-= version 3.1 (Oct 19, 2008) =
+### version 3.1 (Oct 19, 2008) ###
  - added hidden constant to set custom comments post page (OPENID\_COMMENTS\_POST\_PAGE)
  - additional option to skip name and email check for OpenID comments
  - use preferred username (from SREG) if possible when creating new account
  - truncate long URLs when used as display\_name for comments
  - numerous bug fixes, including bug with registration form
 
-= version 3.0 (Oct 02, 2008) =
+### version 3.0 (Oct 02, 2008) ###
  - includes OpenID Provider
  - supports OpenID delegation
  - add experimental support for Email Address to URL Transformation
  - many new hooks for extension and integration
  - major code refactoring
 
-= version 2.2.2 (Aug 06, 2008) =
+### version 2.2.2 (Aug 06, 2008) ###
  - fix bug with "unauthorized return\_to URL" (only known problem with [openid.pl][])
  - fix bug with comments containing non-latin characters
  - respect CUSTOM\_USER\_META\_TABLE constant if present (also added CUSTOM\_OPENID\_IDENTITY\_TABLE constant)
  - add experimental support for Identity in the Browser
 
-= version 2.2.1 (Jul 25, 2008) =
+### version 2.2.1 (Jul 25, 2008) ###
  - fixed EAUT handling code
  - fixed bug that broke comments containing double quotes (")
 
-= version 2.2.0 (Jul 23, 2008) =
+### version 2.2.0 (Jul 23, 2008) ###
  - use POST replay for comments (fixes compatibility with other comment plugins)
  - only build openid object when needed (much better memory usage)
  - support for Email Address to URL Transformation (see eaut.org)
@@ -226,41 +236,41 @@ Full changelog on [github](https://github.com/diso/wordpress-openid/compare/v3.3
  - fixed openid spoofing vulnerability (http://plugins.trac.wordpress.org/ticket/702)
  - lots code refactoring and UI cleanup
 
-= version 2.1.9 (May 20, 2008) =
+### version 2.1.9 (May 20, 2008) ###
  - fix javascript loading issues
  - fix various bugs when creating new account with OpenID
  - fix error message, and add new warning prompt when removing last OpenID for account
 
-= version 2.1.8 (Apr 02, 2008) =
+### version 2.1.8 (Apr 02, 2008) ###
  - fix UI issue with wp-login.php page in WP2.5
  - fix bug printing supported curl protocols (http://wordpress.org/support/topic/159062)
  - fix jquery bug while adding category in WP2.5 (http://wordpress.org/support/topic/164305)
 
-= version 2.1.7 (Mar 21, 2008) =
+### version 2.1.7 (Mar 21, 2008) ###
  - remove php5 dependency bug... AGAIN!
  - also remove some other custom changes to php-openid I forgot were in there. This may actually re-introduce some edge-case
    bugs, but I'd rather expose them so that we can get the appropriate patches pushed upstream if they really are necessary.
 
-= version 2.1.6 (Mar 20, 2008) =
+### version 2.1.6 (Mar 20, 2008) ###
  - update php-openid library to latest. Now properly supports Yahoo's OpenID provider.
 
-= version 2.1.5 (Mar 20, 2008) =
+### version 2.1.5 (Mar 20, 2008) ###
  - add support for wordpress v2.5
 
-= version 2.1.4 (Feb 13, 2008) =
+### version 2.1.4 (Feb 13, 2008) ###
  - fix php5 dependency bug
  - improve jQuery code to reduce problems with other js libraries
 
-= version 2.1.3 (Feb 06, 2008) =
+### version 2.1.3 (Feb 06, 2008) ###
  - address security bug mentioned [here](http://www.gnucitizen.org/blog/hijacking-openid-enabled-accounts). Props Sam Alexander
 
-= version 2.1.2 =
+### version 2.1.2 ###
  - minor typo in profile data code
 
-= version 2.1.1 =
+### version 2.1.1 ###
  - minor bug where profile data is being overwritten
 
-= version 2.1 =
+### version 2.1 ###
  - added FAQ items for plugin updater and adding an OpenID field to a comment form
  - better tracking of which users have OpenIDs linked to their local WP account
  - better automatic username generation
@@ -268,7 +278,7 @@ Full changelog on [github](https://github.com/diso/wordpress-openid/compare/v3.3
  - upgrade to version 2.0 of JanRain OpenID library
  - admin option to rebuild tables
 
-= version 2.0 =
+### version 2.0 ###
  - simplified admin interface by using reasonable defaults.  Default behaviors include:
   - "unobtrusive mode"
   - always add openid to wp-login.php
@@ -278,10 +288,10 @@ Full changelog on [github](https://github.com/diso/wordpress-openid/compare/v3.3
   - supports OpenID 2.0 (draft 12) as well as OpenID 1.1 and SReg 1.0
  - normal collection of bug fixes
 
-= version 1.0.1 =
+### version 1.0.1 ###
  - added wordpress.org style readme.txt
 
-= version 1.0 (also known as r13) =
+### version 1.0 (also known as r13) ###
 
 Full SVN logs are available at <http://dev.wp-plugins.org/log/openid/>.
 
