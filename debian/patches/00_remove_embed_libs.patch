@@ -1,6 +1,6 @@
 --- a/openid.php
 +++ b/openid.php
-@@ -30,16 +30,11 @@
+@@ -31,16 +31,11 @@
  	define( 'OPENID_ENABLE_ADMIN_PANELS', true );
  }
  
