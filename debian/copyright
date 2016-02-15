@@ -1,8 +1,8 @@
-Format-Specification:
-    http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=59
-Name: Wordpress OpenID plugin
-Maintainer: DiSo Development Team http://diso-project.org/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Wordpress OpenID plugin
+Upstream-Contact: DiSo Development Team http://diso-project.org/
 Source: http://wordpress.org/extend/plugins/openid/
+License: Apache-2.0
 
 Files: *
 Copyright: 2007-2009 DiSo Development Team
