@@ -1,3 +1,12 @@
+wordpress-openid (3.4.1-1) unstable; urgency=medium
+
+  * New upstream release 3.4.1
+  * debian/copyright: Updated to current copyright-format version.
+  * debian/copyright: Update license according to upstream changes.
+  * 00_remove_embed_libs.patch refreshed.
+
+ -- Alexander GQ Gerasiov <gq@debian.org>  Mon, 15 Feb 2016 03:34:06 +0300
+
 wordpress-openid (3.4.0-1) unstable; urgency=medium
 
   * Remove CDBS dependency and switch to DH 9+.
